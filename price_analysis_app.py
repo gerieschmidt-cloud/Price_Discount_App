@@ -43,7 +43,8 @@ if plp > 0 and clp > 0 and pdisc >= 0 and cdisc >= 0:
     st.write(f"50% Realization: {prl50calc}% / ${spexpec50}")
     st.write(f"25% Realization: {prl25calc}% / ${spexpec25}")
     st.write(f"0% Realization: {prl0calc}% / ${spexpec0}")
-
+    st.write(f"List Price Change Realized at Current Discount: {sprealizedpercent}%")
+    
     st.subheader("Details")
     st.write(f"Previous Sales Price: ${pspcalc}")
     st.write(f"Current Sales Price: ${cspcalc}")
@@ -53,4 +54,3 @@ if plp > 0 and clp > 0 and pdisc >= 0 and cdisc >= 0:
     st.write(f"Expected Price Change with List Price Change: ${spexpecrealized}")
     st.write(f"Change in Discount: {dpdeltapptcalc} ppts")
     st.write(f"Change in Discount: {dpdeltapctcalc}%")
-    st.write(f"List Price Change Realized at Current Discount: {sprealizedpercent}%")
